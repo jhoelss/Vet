@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="final.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" >
+    </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css"/>
+    <link rel="stylesheet" href="assets/css/modelo.css" type="text/css"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="nav-bar">
+                <nav class="navegacion">
+                    <a href="inicio.aspx">Inicio</a>
+                    <a href="nosotros.aspx">Quiénes somos</a>
+                    <a href="servicios.aspx">Servicios</a>
+                    <a href="instalaciones.aspx">Instalaciones</a>
+                    <a href="contacto.aspx">Contacto</a>
+                    <a href="citas.aspx">Citas</a>
+                </nav>
+               
+            </div>
+        </div>
+    </header>
+
+      <main class="contenedor">
+    <form id="form1" runat="server" class="formulario">
+        <div>
+           
+            <asp:ContentPlaceHolder ID="main" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+       
+    </form>
+         </main>
+
+   
+</body>
+</html>
